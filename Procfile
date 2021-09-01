@@ -1,1 +1,1 @@
-web: gunicorn --bind 127.0.0.1:8000 --worker-class sanic_gunicorn.Worker --workers=3  server:app
+web: gunicorn --bind 127.0.0.1:8000 --worker-class sanic.worker.GunicornWorker --workers=3  server:app
